@@ -25,7 +25,7 @@
 This is [on GitHub](https://github.com/yjham2002/ConcurrencyTest_Java).
 
 ### Team
+* EuiJin Ham (Leader)
 * Dongmin Jeong
 * Seho Chun
 * SungSoo Park
-* EuiJin Ham (Leader)
