@@ -11,7 +11,7 @@
 ### class ParallelMatrix
 - Calculating multiple of matrices simply(Extending Thread) 
 
-##### Calculation Code
+##### Calculation Code - Java
 ```java
 @Override
     public void run(){
@@ -20,6 +20,22 @@
                 for(int k = 0; k < matrixC.length; k++)
                     matrixC[i][j] += matrixA[i][k] * matrixB[k][j];
     }
+```
+
+##### Calculation Code - Go
+```go
+func multiply(index int, size int, ch chan<- int){
+	for i:=0; i<size/threadCount; i++{
+		for j:=0; j<size/threadCount; j++{
+			var sum int=0
+			for k:=0; k<size; k++{
+				sum = sum + MatrixA[index + i][k] * MatrixB[k][index + j]
+			}
+			MatrixC[index+i][j] = sum
+		}
+	}
+	ch <- 0
+}
 ```
 
 This is [on GitHub](https://github.com/yjham2002/ConcurrencyTest_Java).
