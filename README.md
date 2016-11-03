@@ -22,6 +22,8 @@
     }
 ```
 
+- You can find the reason why we have used nanoTime() to get time [on StackOverflow](http://stackoverflow.com/questions/351565/system-currenttimemillis-vs-system-nanotime).
+
 ##### Calculation Code - Go
 ```go
 func multiply(index int, size int, ch chan<- int){
