@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.Scanner;
 
 public class main{
     private static int NumOfThreads;
@@ -19,13 +18,6 @@ public class main{
     public static void testUnit(int size) throws InterruptedException{
         avrTime = 0;
         SizeOfMatrix = size;
-
-        NumOfThreads = Runtime.getRuntime().availableProcessors(); // Retrieving Available Processors
-
-        if(SizeOfMatrix % NumOfThreads != 0){
-            System.out.println("Program Halted - SizeOfMatrix must be multiple of " + NumOfThreads + ".");
-            return;
-        }
 
         MatrixA = new int[SizeOfMatrix][SizeOfMatrix];
         MatrixB = new int[SizeOfMatrix][SizeOfMatrix];

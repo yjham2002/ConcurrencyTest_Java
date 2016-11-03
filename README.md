@@ -1,4 +1,4 @@
-# Concurrency Test in Java
+# Concurrency Testing code in Go and Java
 - This project refers (Concurrency in Go and Java - Naohiro Togashi, 2014).
 
 ## Dongguk University
